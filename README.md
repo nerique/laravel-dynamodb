@@ -39,7 +39,7 @@ $model->where('key', 'key value')->get();
 $model->where(['key' => 'key value']);
 // Chainable for 'AND'. 'OR' is not supported.
 $model->where('foo', 'bar')
-    ->where('foo2', '!=' 'bar2')
+    ->where('foo2', '!=', 'bar2')
     ->get();
 
 // Using scan operator, not too reliable since DynamoDb will only give 1MB total of data.
